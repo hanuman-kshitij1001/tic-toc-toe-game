@@ -1,0 +1,75 @@
+*,*::before,*::after{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTxZvsbvSWJfdUDxwNJcGJ2CZ1EoqeI5HqbULGGf0N4N3EuaFuegEfL8&s=10");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+    place-items: center;
+}
+
+.game-info{
+    height: 30px;
+    width: 130px;
+    color:white;
+    position: absolute;
+    top:3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.15);
+    border-radius: 1.2rem;
+    border:1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 1.5rem;
+}
+
+.tic-tac-toe{
+    width: 350px;
+    height: 350px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 0rem;
+    background: rgba(255,255,255,0.15);
+    border-radius: 1.2rem;
+    border:1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem;
+}
+.box{
+    position: relative;
+    width : 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 5rem;
+
+}
+
+/* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+    background: rgba(255,255,255,0.15);
+    border-radius: 1.2rem;
+    border:1px solid rgba(255,255,255,0.25);
+    display:grid;
+    place-items: center;
+} */
+
+.box1, .box2, .box4, .box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+.box3, .box6{
+    border-bottom:2px solid white;
+}
+
+.box7, .box8{
+    border-right:2px solid white;
+}
+
+.btn{
+
+}
